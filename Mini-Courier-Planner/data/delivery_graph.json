@@ -1,0 +1,75 @@
+{
+  "depot": "DEPOT",
+  "vehicle_capacity": 15,
+  "locations": [
+    "DEPOT",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "roads": [
+    {
+      "from": "DEPOT",
+      "to": "A",
+      "distance": 4
+    },
+    {
+      "from": "DEPOT",
+      "to": "B",
+      "distance": 6
+    },
+    {
+      "from": "A",
+      "to": "B",
+      "distance": 2
+    },
+    {
+      "from": "A",
+      "to": "C",
+      "distance": 5
+    },
+    {
+      "from": "B",
+      "to": "C",
+      "distance": 3
+    },
+    {
+      "from": "B",
+      "to": "D",
+      "distance": 7
+    },
+    {
+      "from": "C",
+      "to": "D",
+      "distance": 2
+    },
+    {
+      "from": "C",
+      "to": "E",
+      "distance": 6
+    },
+    {
+      "from": "D",
+      "to": "E",
+      "distance": 3
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "distance": 5
+    },
+    {
+      "from": "E",
+      "to": "F",
+      "distance": 2
+    },
+    {
+      "from": "A",
+      "to": "F",
+      "distance": 12
+    }
+  ]
+}

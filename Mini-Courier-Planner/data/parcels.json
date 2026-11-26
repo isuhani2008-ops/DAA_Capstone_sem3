@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P01",
+    "destination": "A",
+    "weight": 4,
+    "deadline": 2,
+    "priority": 90
+  },
+  {
+    "id": "P02",
+    "destination": "B",
+    "weight": 6,
+    "deadline": 1,
+    "priority": 100
+  },
+  {
+    "id": "P03",
+    "destination": "C",
+    "weight": 5,
+    "deadline": 3,
+    "priority": 70
+  },
+  {
+    "id": "P04",
+    "destination": "D",
+    "weight": 3,
+    "deadline": 2,
+    "priority": 60
+  },
+  {
+    "id": "P05",
+    "destination": "E",
+    "weight": 7,
+    "deadline": 4,
+    "priority": 80
+  },
+  {
+    "id": "P06",
+    "destination": "B",
+    "weight": 2,
+    "deadline": 1,
+    "priority": 50
+  },
+  {
+    "id": "P07",
+    "destination": "F",
+    "weight": 5,
+    "deadline": 5,
+    "priority": 65
+  },
+  {
+    "id": "P08",
+    "destination": "C",
+    "weight": 3,
+    "deadline": 2,
+    "priority": 75
+  }
+]

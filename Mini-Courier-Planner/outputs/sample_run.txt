@@ -1,0 +1,64 @@
+============================================================
+              MINI-COURIER PLANNER
+============================================================
+Starting depot: DEPOT
+Vehicle capacity: 15 kg
+
+PHASE 2: PARCELS AFTER PRIORITIZATION
+-------------------------------------
+ID    Destination        Weight    Deadline   Priority
+P02   B                       6           1        100
+P06   B                       2           1         50
+P01   A                       4           2         90
+P08   C                       3           2         75
+P04   D                       3           2         60
+P03   C                       5           3         70
+P05   E                       7           4         80
+P07   F                       5           5         65
+
+SELECTED PARCELS FOR THIS TRIP
+------------------------------
+ID    Destination        Weight    Deadline   Priority
+P02   B                       6           1        100
+P06   B                       2           1         50
+P01   A                       4           2         90
+P08   C                       3           2         75
+
+Total selected weight: 15 kg / 15 kg
+Total priority score: 315
+
+PHASE 3: SHORTEST PATHS USING DIJKSTRA
+
+Distance matrix (km):
+                   DEPOT           A           B           C
+DEPOT                0.0         4.0         6.0         9.0
+A                    4.0         0.0         2.0         5.0
+B                    6.0         2.0         0.0         3.0
+C                    9.0         5.0         3.0         0.0
+
+DELIVERY ROUTE USING NEAREST NEIGHBOR TSP
+DEPOT -> A -> B -> C -> DEPOT
+Estimated route distance: 18.0 km
+(The route returns to the depot after the final delivery.)
+
+ROAD PATH DETAILS
+DEPOT -> A: DEPOT -> A (4.0 km)
+A -> B: A -> B (2.0 km)
+B -> C: B -> C (3.0 km)
+C -> DEPOT: C -> B -> DEPOT (9.0 km)
+
+PHASE 4: PERFORMANCE TESTING
+Input size        Merge Sort (s)    Knapsack (s)    Dijkstra (s)
+----------------------------------------------------------------
+10                      0.000017        0.000240        0.000014
+50                      0.000093        0.000951        0.000070
+100                     0.000230        0.002145        0.000294
+200                     0.000552        0.002877        0.000658
+
+Runtime measurements saved to: outputs/runtime_results.csv
+Runtime chart saved to: outputs/runtime_comparison.png
+
+Nearest Neighbor TSP on 11 delivery points: 0.000021 seconds
+
+Note: Runtime values depend on your computer and Python environment.
+Run the experiment more than once and report measured results, not invented values.
